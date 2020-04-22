@@ -1,0 +1,9 @@
+FTP: 50.62.169.121
+login: ph20598337134
+pass: you know that
+
+host: 50.62.209.185:3306
+Database name: sunsale
+Database user name: system
+pass: Masterkey1
+f77156eb-eab2-4ca3-8a9e-22e895f7c9a1 - chave desenvolvedor
