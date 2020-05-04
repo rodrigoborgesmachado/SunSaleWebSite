@@ -41,6 +41,10 @@
 								Sistema para lojas de calçados e de roupas que fornece controle de vendas, clientes, produtos, caixa, títulos, etc.
 								<br>
 								<br>
+								O <a href="../Módulos/apresentacao.pdf" target="_blank">documento de apresentação</a> do sistema mostra um pouco como o sistema funciona, assim como os módulos a seguir. Qualquer dúvida entre em <a href="index_contatos.php" target="_blank">contato</a> com nosso time.
+								<br>
+								<br>
+
 								Esse sistema possui os seguintes <a href="../Módulos/Módulo - Módulos.pdf" target="_blank">módulos</a>:
 								<ul>
 									<li>
@@ -137,6 +141,46 @@
 											</td>
 											<td>
 												<b><a href="Instaladores/Sunsale/3.0.0.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.1.0</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.1.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.2.0</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.2.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.3.0</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.3.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.4.0</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.4.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.5.0</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.5.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
 											</td>
 										</tr>
 									</tbody>

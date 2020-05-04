@@ -1,16 +1,19 @@
 <?php
 global $servidor, $usuario, $senha, $nomeBD;
 
+function Conectar()
+{
+	$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
+	$usuario = "system";
+	$senha = "Masterkey1";
 
-function Conectar(){
-$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
-$usuario = "system";
-$senha = "Masterkey1";
-
-	try{
+	try
+	{
 		$con = new PDO($servidor, $usuario, $senha);
 		return $con;
-	} catch (Exception $e){
+	} 
+	catch (Exception $e)
+	{
 		echo 'Erro: '.$e->getMessage();
 		return null;
 	}
@@ -22,7 +25,7 @@ function getChaves($chave){
 	$pdo = Conectar();
 	if($pdo == null)echo '<br>deu ruim';
 	else{
-		$sql = 'SELECT VALORGUID AS Chave, ATIVO AS Ativo FROM KEYS_SYSTEM';
+		$sql = 'SELECT * FROM KEYS_SYSTEM';
 		$stm = $pdo->prepare($sql);
 		//$stm->bindValue(1, $chave);
 		$stm->execute();
