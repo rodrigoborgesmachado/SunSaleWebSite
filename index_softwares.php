@@ -33,7 +33,7 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-4">
-								<img class = "imgGalery" src='images/logo400x300.png' alt="Paris">
+								<img class = "imgGalery slideanim" src='images/logo400x300.png' alt="Paris">
 							</div>	
 							<div class="col-sm-8">
 								<h2>SunSale</h2>
@@ -131,48 +131,8 @@
 											</td>
 											<td>
 												<font size="+1">
-													Instalador
+													<b>Instalador</b>
 												</font>
-											</td>
-										</tr>
-										<tr>
-											<td> 
-												<b>3.0.0.0</b>
-											</td>
-											<td>
-												<b><a href="Instaladores/Sunsale/3.0.0.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
-											</td>
-										</tr>
-										<tr>
-											<td> 
-												<b>3.0.1.0</b>
-											</td>
-											<td>
-												<b><a href="Instaladores/Sunsale/3.0.1.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
-											</td>
-										</tr>
-										<tr>
-											<td> 
-												<b>3.0.2.0</b>
-											</td>
-											<td>
-												<b><a href="Instaladores/Sunsale/3.0.2.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
-											</td>
-										</tr>
-										<tr>
-											<td> 
-												<b>3.0.3.0</b>
-											</td>
-											<td>
-												<b><a href="Instaladores/Sunsale/3.0.3.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
-											</td>
-										</tr>
-										<tr>
-											<td> 
-												<b>3.0.4.0</b>
-											</td>
-											<td>
-												<b><a href="Instaladores/Sunsale/3.0.4.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
 											</td>
 										</tr>
 										<tr>
@@ -181,6 +141,22 @@
 											</td>
 											<td>
 												<b><a href="Instaladores/Sunsale/3.0.5.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.6.0</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.6.0/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
+											</td>
+										</tr>
+										<tr>
+											<td> 
+												<b>3.0.6.1</b>
+											</td>
+											<td>
+												<b><a href="Instaladores/Sunsale/3.0.6.1/sunsalePro.exe" target="_blank">sunsalePro.exe</a></b>
 											</td>
 										</tr>
 									</tbody>
