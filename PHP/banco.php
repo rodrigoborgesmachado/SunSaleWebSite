@@ -6,14 +6,12 @@ function alert($mensagem)
 	echo "</script>";
 }
 
-function Conectar(){
-	$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
-	$usuario = "system";
-	$senha = "Masterkey1";
+function Conectar()
+{
 	
 	try
 	{
-		$con = new PDO($servidor, $usuario, $senha);
+		$con = new mysqli('50.62.209.185:3306', 'system', 'Masterkey1', 'sunsale');
 		return $con;
 	} 
 	catch (Exception $e)
