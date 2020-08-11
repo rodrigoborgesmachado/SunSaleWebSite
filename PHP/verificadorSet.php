@@ -28,24 +28,51 @@ $pcName = isset($_POST['pcName']) ? $_POST['pcName'] : '-';
 
 echo setChave($chaveGuid, $ativo, $cnpj, $diaVencimento, $pcName);
 
+function TrataCNPJ($cnpj){
+    $cnpj = str_replace('.', '', $cnpj);
+    $cnpj = str_replace('/', '', $cnpj);
+    $cnpj = str_replace('-', '', $cnpj);
+	return $cnpj;
+}
+
+/** 
+ * recursively create a long directory path
+ */
+function createPath($path) {
+    if (is_dir($path)) {
+        return true;
+    }    
+    $prev_path = substr($path, 0, strrpos($path, '/', -2) + 1 );
+    $return = createPath($prev_path);
+    return ($return && is_writable($prev_path)) ? mkdir($path) : false;
+}
+
 function setChave($chaveGuid, $ativo, $cnpj, $diaVencimento, $pcName)
 {
 	$pdo = Conectar();
 	$result = 'True';
+
+	$caminhoArquivo = '../Clientes/Arquivos/' . TrataCNPJ($cnpj);
+
+	if(!is_dir($caminhoArquivo)){
+		$result = createPath($caminhoArquivo) ? 'True' : 'False';
+	}
 	
-	if($pdo == null || $chaveGuid == '-')
+	if($pdo == null || $chaveGuid == '-' || $result == 'False')
 	{
 		$result = 'False';
 	}
 	else
 	{
-		$sql = 'INSERT INTO KEYS_SYSTEM (VALORGUID, ATIVO, CNPJ, DIAVERIFICACAO, PC_NAME) VALUES (?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO KEYS_SYSTEM (VALORGUID, ATIVO, CNPJ, DIAVERIFICACAO, PC_NAME, CAMINHO_ARQUIVOS) 
+			    VALUES (?, ?, ?, ?, ?, ?)';
 		$stm = $pdo->prepare($sql);
 		$stm->bindValue(1, $chaveGuid);
 		$stm->bindValue(2, $ativo);
 		$stm->bindValue(3, $cnpj);
 		$stm->bindValue(4, $diaVencimento);
 		$stm->bindValue(5, $pcName);
+		$stm->bindValue(6, $caminhoArquivo);
 		
 		if($stm->execute() == false)
 		{
