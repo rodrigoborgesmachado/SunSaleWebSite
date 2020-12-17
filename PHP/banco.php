@@ -1,4 +1,6 @@
 <?php
+include 'bd.php';
+
 function alert($mensagem)
 { 
 	echo "<script language=\"javascript\" type=\"text/javascript\">";
@@ -6,21 +8,6 @@ function alert($mensagem)
 	echo "</script>";
 }
 
-function Conectar()
-{
-	
-	try
-	{
-		$con = new mysqli('50.62.209.185:3306', 'system', 'Masterkey1', 'sunsale');
-		return $con;
-	} 
-	catch (Exception $e)
-	{
-		echo 'Erro: '.$e->getMessage();
-		return null;
-	}
-}
- 
 function cadastraCliente($cnpj, $email, $nomeFantasia, $razaoSocial, $telefone){
 	
 	$conn = Conectar();

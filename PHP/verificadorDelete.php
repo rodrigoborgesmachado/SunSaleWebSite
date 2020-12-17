@@ -1,20 +1,6 @@
 <?php
-global $servidor, $usuario, $senha, $nomeBD;
+include 'bd.php';
 
-
-function Conectar(){
-$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
-$usuario = "system";
-$senha = "Masterkey1";
-
-	try{
-		$con = new PDO($servidor, $usuario, $senha);
-		return $con;
-	} catch (Exception $e){
-		echo 'Erro: '.$e->getMessage();
-		return null;
-	}
-}
 $chaveGuid = $ativo = '';
 $chaveGuid = isset($_POST['chaveGuid']) ? $_POST['chaveGuid'] : 'f77156eb-eab2-4ca3-8a9e-22e895f7c9a1';
 echo setChave($chaveGuid, $ativo);

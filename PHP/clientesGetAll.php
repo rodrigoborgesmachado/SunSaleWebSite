@@ -1,24 +1,9 @@
 <?php
-global $servidor, $usuario, $senha, $nomeBD;
+include 'bd.php';
 
+echo getChaves();
 
-function Conectar(){
-$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
-$usuario = "system";
-$senha = "Masterkey1";
-
-	try{
-		$con = new PDO($servidor, $usuario, $senha);
-		return $con;
-	} catch (Exception $e){
-		echo 'Erro: '.$e->getMessage();
-		return null;
-	}
-}
-
-echo getChaves($chave);
-
-function getChaves($chave){
+function getChaves(){
 	$pdo = Conectar();
 	if($pdo == null)echo '<br>deu ruim';
 	else{

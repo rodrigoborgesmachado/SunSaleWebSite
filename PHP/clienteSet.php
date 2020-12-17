@@ -1,20 +1,7 @@
 <?php
-global $servidor, $usuario, $senha, $nomeBD;
 
+include 'bd.php';
 
-function Conectar(){
-$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
-$usuario = "system";
-$senha = "Masterkey1";
-
-	try{
-		$con = new PDO($servidor, $usuario, $senha);
-		return $con;
-	} catch (Exception $e){
-		echo 'Erro: '.$e->getMessage();
-		return null;
-	}
-}
 $cnpj = $email = $nomeFantasia = $razaoSocial = $telefone = '';
 $cnpj = isset($_POST['cnpj']) ? $_POST['cnpj'] : '-';
 $email = isset($_POST['email']) ? $_POST['email'] : '-';

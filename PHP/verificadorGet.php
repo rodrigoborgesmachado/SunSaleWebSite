@@ -1,24 +1,5 @@
 <?php
-global $servidor, $usuario, $senha, $nomeBD;
-
-
-function Conectar()
-{
-	$servidor = "mysql:dbname=sunsale;host=50.62.209.185:3306";
-	$usuario = "system";
-	$senha = "Masterkey1";
-
-	try
-	{
-		$con = new PDO($servidor, $usuario, $senha);
-		return $con;
-	} 
-	catch (Exception $e)
-	{
-		echo 'Erro: '.$e->getMessage();
-		return null;
-	}
-}
+include 'bd.php';
 
 $chave = isset($_POST['chave']) ? $_POST['chave'] : 'hehe';
 $ip = (isset($_SERVER['HTTP_CF_CONNECTING_IP'])) ? $_SERVER['HTTP_CF_CONNECTING_IP'] : (isset($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0';
