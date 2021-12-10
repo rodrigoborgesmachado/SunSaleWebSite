@@ -47,9 +47,34 @@ function Conectar()
                             <br>					
 						</div>
 						<div class="row">
+							<div class="col-sm-8">
+								<h2>Concursando e Vestibulando</h2>
+								<h4>
+									Como a grande parte dos sites para concurseiros e para aqueles que fazem vestibulares são pagos, criei um sistema para fazer questões de concurso online.
+									<br>
+									Link: <a target="_blank" href="http://concursando.sunsalesystem.com.br/">Concursando e Vestibulando</a>
+								</h4>
+							</div>
 							<div class="col-sm-4">
-								<img class = "imgGalery slideanim" src='images/logo400x300.png' alt="Paris">
+								<span class="glyphicon glyphicon-list-alt logo slideanim"></span>
 							</div>	
+						</div>
+						<br><hr><br>
+						<div class="row">
+							<div class="col-sm-4">
+								<span class="glyphicon glyphicon-phone logo slideanim"></span>
+							</div>	
+							<div class="col-sm-8">
+								<h2>Tabuada Divertida</h2>
+								<h4>
+									Projeto jogo que tem como objetivo treinar a tabuada direcionado para crianças que estão aprendendo ou qualquer pessoa que queira praticar e se desafiar quanto ao menor tempo.
+									<br>
+									Link: <a target="_blank" href="http://tabuadadivertida.sunsalesystem.com.br/">Tabuada Divertida</a>
+								</h4>
+							</div>
+						</div>
+						<br><hr><br>
+						<div class="row">
 							<div class="col-sm-8">
 								<h2>SunSale</h2>
 								<h4>
@@ -126,6 +151,9 @@ function Conectar()
 								<br><br>
 								</h4>
 							</div>
+							<div class="col-sm-4">
+								<img class = "imgGalery slideanim" src='images/logo400x300.png' alt="Paris">
+							</div>	
 						</div>
 					</div>
 				</div>				
