@@ -16,5 +16,8 @@ Banco Devtools
 usuário: rodrigo
 senha: X19umw_9
 
-Data Source:
-Data Source=P3NWPLSK12SQL-v09.shr.prod.phx3.secureserver.net;Integrated Security=False;User ID=rodrigo;Password=X19umw_9;Connect Timeout=15;Encrypt=False;Packet Size=4096
+Data Source=P3NWPLSK12SQL-v09.shr.prod.phx3.secureserver.net;Initial Catalog=Devtools;Integrated Security=False;User ID=rodrigo;Password=X19umw_9;Connect Timeout=15;Encrypt=False;Packet Size=4096
+
+
+Adiciona subdominio
+https://dcc.godaddy.com/manage/sunsalesystem.com.br/dns
