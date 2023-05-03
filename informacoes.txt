@@ -16,6 +16,8 @@ Banco Devtools
 usuário: rodrigo
 senha: X19umw_9
 
+connection string bd sunsale: "Server=50.62.209.185;Port=3306;Database=sunsale;Uid=system;Pwd=Masterkey1;"
+
 Data Source=P3NWPLSK12SQL-v09.shr.prod.phx3.secureserver.net;Initial Catalog=Devtools;Integrated Security=False;User ID=rodrigo;Password=X19umw_9;Connect Timeout=15;Encrypt=False;Packet Size=4096
 
 

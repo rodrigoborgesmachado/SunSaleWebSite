@@ -48,11 +48,15 @@ function Conectar()
 						</div>
 						<div class="row">
 							<div class="col-sm-8">
-								<h2>Concursando e Vestibulando</h2>
+								<h2><span>Concursando e Vestibulando</span></h2>
 								<h4>
-									Como a grande parte dos sites para concurseiros e para aqueles que fazem vestibulares são pagos, criei um sistema para fazer questões de concurso online.
+									<span>Como a grande parte dos sites para concurseiros e para aqueles que fazem vestibulares são pagos, criei um sistema para fazer questões de concurso online.</span>
 									<br>
-									Link: <a target="_blank" href="http://concursando.sunsalesystem.com.br/">Concursando e Vestibulando</a>
+									Link: <a target="_blank" href="http://questoesconcurso.sunsalesystem.com.br/"><span>Questões de concurso</span></a>
+									<br>
+									<span>Ou se preferir ter um login para acompanhar seu desenvolvimento, o sistem <strong>Concursando</strong> pode ser de melhor ajuda.</span>
+									<br>
+									Link: <a target="_blank" href="http://concursando.sunsalesystem.com.br/"><span>Concursando</span></a>
 								</h4>
 							</div>
 							<div class="col-sm-4">
@@ -65,23 +69,23 @@ function Conectar()
 								<span class="glyphicon glyphicon-phone logo slideanim"></span>
 							</div>	
 							<div class="col-sm-8">
-								<h2>Tabuada Divertida</h2>
+								<h2><span>Tabuada Divertida</span></h2>
 								<h4>
-									Projeto jogo que tem como objetivo treinar a tabuada direcionado para crianças que estão aprendendo ou qualquer pessoa que queira praticar e se desafiar quanto ao menor tempo.
+									<span>Projeto jogo que tem como objetivo treinar a tabuada direcionado para crianças que estão aprendendo ou qualquer pessoa que queira praticar e se desafiar quanto ao menor tempo.</span>
 									<br>
-									Link: <a target="_blank" href="http://tabuadadivertida.sunsalesystem.com.br/">Tabuada Divertida</a>
+									Link: <a target="_blank" href="http://tabuadadivertida.sunsalesystem.com.br/"><span>Tabuada Divertida</span></a>
 								</h4>
 							</div>
 						</div>
 						<br><hr><br>
 						<div class="row">
 							<div class="col-sm-8">
-								<h2>SunSale</h2>
+								<h2><span>SunSale</span></h2>
 								<h4>
-								Sistema para lojas de calçados e de roupas que fornece controle de vendas, clientes, produtos, caixa, títulos, etc.
+								<span>Sistema para lojas de calçados e de roupas que fornece controle de vendas, clientes, produtos, caixa, títulos, etc.</span>
 								<br>
 								<br>
-								O <a href="../Módulos/apresentacao.pdf" target="_blank">documento de apresentação</a> do sistema mostra um pouco como o sistema funciona, assim como os módulos a seguir. Qualquer dúvida entre em <a href="index_contatos.php" target="_blank">contato</a> com nosso time.
+								<span>O <a href="../Módulos/apresentacao.pdf" target="_blank">documento de apresentação</a> do sistema mostra um pouco como o sistema funciona, assim como os módulos a seguir. Qualquer dúvida entre em <a href="index_contatos.php" target="_blank">contato</a> com nosso time.</span>
 								<br>
 								<br>
 								<br><br>
@@ -92,7 +96,7 @@ function Conectar()
 									{
 										$conn = Conectar();
 										
-										$result = $conn->query('SELECT CAMINHO, VERSAO FROM INSTALADORES WHERE CODIGOPROJETO = 0');
+										$result = $conn->query('SELECT CAMINHO, VERSAO FROM INSTALADORES WHERE CODIGOPROJETO = 0 order by versao desc');
 
 										if (! $result)
 										{
