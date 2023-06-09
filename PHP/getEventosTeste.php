@@ -1,6 +1,0 @@
-<?php
-
-echo '[{"id":1,"timeStamp":"1539112021301","tag":"brasil.sul.sensor1","valor":"350","status":"processado"},{"id":2,"timeStamp":"1539112021301","tag":"brasil.sul.sensor2","valor":"355","status":"processado"},{"id":3,"timeStamp":"1539112021301","tag":"brasil.sul.sensor3","valor":"355","status":"processado"},{"id":4,"timeStamp":"1539112021301","tag":"brasil.sul.sensor4","valor":"355","status":"processado"},{"id":5,"timeStamp":"1539112021301","tag":"brasil.sul.sensor5","valor":"350","status":"processado"},{"id":6,"timeStamp":"1539112021301","tag":"brasil.suldeste.sensor0","valor":"350","status":"processado"},{"id":7,"timeStamp":"1539112021301","tag":"brasil.suldeste.sensor1","valor":"370","status":"processado"},{"id":8,"timeStamp":"1539112021301","tag":"brasil.suldeste.sensor2","valor":"375","status":"processado"},{"id":9,"timeStamp":"1539112021301","tag":"brasil.suldeste.sensor3","valor":"375","status":"processado"},{"id":10,"timeStamp":"1539112021301","tag":"brasil.nordeste.sensor1","valor":"375","status":"processado"},{"id":11,"timeStamp":"1539112021301","tag":"brasil.nordeste.sensor1","valor":"390","status":"processado"}]';
-
-
-?>
