@@ -7,7 +7,7 @@
 <html lang="pt-br">
     <body>
         <div class="jumbotron text-center">
-            <h1><?php echo $nomeClinica; ?></h1> 
+            <h1>SunSale System</h1> 
             <p>Software House for anything</p>
         </div>
     </body>

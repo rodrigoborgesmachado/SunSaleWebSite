@@ -15,7 +15,7 @@
 		<script type="text/javascript" src="javascript/jquery.js"></script>
 		<link rel="icon" type="../image/png" sizes="25x17" href="images/logo16x16.png">
 		<link rel="manifest" href="/manifest.json">
-        <title><?php echo $nomeClinica; ?></title>
+        <title>SunSale System</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
