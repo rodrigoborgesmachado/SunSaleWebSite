@@ -28,47 +28,6 @@
 		
 			<div class="interna" style="background-color: #dddddd;" align="justify">
                 <div id="contact" class="container-fluid bg-grey">
-                <div class="row">
-                        <div class="row">
-        					<div class="col-sm-12">
-				        		<h2>
-                                    Cadastre-se! Um de nossos atendentes entrará em contato!   
-                                </h2>
-                                <hr>
-						        <h4>
-                                </h4>
-                                <br>					
-        					</div>
-                        </div>
-                        <div>
-                            <form action="php/banco.php?id=1" method="POST">
-                                <div class="col-sm-8 slideanim">
-							        <div class="row">
-						        		<div class="col-sm-6 form-group">
-					        				<input class="form-control" id="razaoSocial" name="razaoSocial" placeholder="Razão Social" type="text" required>
-				        				</div>
-			        					<div class="col-sm-6 form-group">
-		        							<input class="form-control" id="nomeFantasia" name="nomeFantasia" placeholder="Nome Fantasia" type="text" required>
-	        							</div>
-                                          <div class="col-sm-6 form-group">
-									        <input class="form-control" id="cnpj" name="cnpj" placeholder="CNPJ" type="text" required>
-								        </div>
-                                           <div class="col-sm-6 form-group">
-							        		<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-						        		</div>
-                                           <div class="col-sm-6 form-group">
-				        					<input class="form-control" id="telefone" name="telefone" placeholder="Telefone" type="text" required>
-			        					</div>
-		        					</div>
-	        						<div class="row">
-        								<div class="col-sm-12 form-group">
-									        <button class="btn btn-default pull-right" type="submit">Enviar</button>
-								        </div>
-								    </div></h4>
-							    </div>                            
-                            </form>
-                        </div>
-                    </div>
                     <div class="row">
 	    				<div class="col-sm-12">
     						<h2>

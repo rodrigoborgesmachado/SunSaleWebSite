@@ -50,13 +50,9 @@ function Conectar()
 							<div class="col-sm-8">
 								<h2><span>Concursando e Vestibulando</span></h2>
 								<h4>
-									<span>Como a grande parte dos sites para concurseiros e para aqueles que fazem vestibulares são pagos, criei um sistema para fazer questões de concurso online.</span>
+									<span>Explore o mundo do conhecimento com Questões Aqui, o seu destino online para uma ampla gama de questões e respostas. Se você está estudando para um exame, procurando aprimorar suas habilidades em um determinado assunto ou simplesmente deseja desafiar sua mente, nós temos o que você precisa. Navegue por nossa extensa coleção de questões abrangendo diversas disciplinas, desde matemática e ciências até história e literatura. Com nosso layout intuitivo e categorias bem organizadas, encontrar a informação certa nunca foi tão fácil. Prepare-se para explorar, aprender e crescer com Questões Aqui!</span>
 									<br>
-									Link: <a target="_blank" href="http://questoesconcurso.sunsalesystem.com.br/"><span>Questões de concurso</span></a>
-									<br>
-									<span>Ou se preferir ter um login para acompanhar seu desenvolvimento, o sistem <strong>Concursando</strong> pode ser de melhor ajuda.</span>
-									<br>
-									Link: <a target="_blank" href="http://concursando.sunsalesystem.com.br/"><span>Concursando</span></a>
+									Link: <a target="_blank" href="https://www.questoesaqui.com/"><span>Questões de concurso</span></a>
 								</h4>
 							</div>
 							<div class="col-sm-4">
@@ -71,9 +67,9 @@ function Conectar()
 							<div class="col-sm-8">
 								<h2><span>Tabuada Divertida</span></h2>
 								<h4>
-									<span>Projeto jogo que tem como objetivo treinar a tabuada direcionado para crianças que estão aprendendo ou qualquer pessoa que queira praticar e se desafiar quanto ao menor tempo.</span>
+									<span>Descubra o lado divertido da matemática com Tabuada Divertida! Nosso site é projetado para ajudar crianças e adultos a dominar a tabuada de forma envolvente e interativa. Esqueça das tradicionais folhas de cálculo monótonas e mergulhe em um ambiente vibrante e animado, onde a aprendizagem se torna uma aventura emocionante. Com jogos educativos, quebra-cabeças interativos e desafios divertidos, tornamos a prática da tabuada uma experiência agradável. Acompanhe seu progresso, desbloqueie conquistas e compartilhe seu sucesso com amigos. Aprender matemática nunca foi tão empolgante como é com Tabuada Divertida!</span>
 									<br>
-									Link: <a target="_blank" href="http://tabuadadivertida.sunsalesystem.com.br/"><span>Tabuada Divertida</span></a>
+									Link: <a target="_blank" href="https://www.tabuadadivertida.com/"><span>Tabuada Divertida</span></a>
 								</h4>
 							</div>
 						</div>
