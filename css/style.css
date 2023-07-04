@@ -522,7 +522,7 @@ footer h4{
     .teamSoccer > div img,
     .oferecer > div img,
     .parteTime > div img{
-        width: 600px;
+        width: 400px;
         margin: 8px;
     }
 
@@ -530,7 +530,7 @@ footer h4{
     .api > div > div img,
     .crud > div > div img,
     .filmaria > div > div img{
-        width: 400px;
+        width: 300px;
         margin: 8px;
     }
 
