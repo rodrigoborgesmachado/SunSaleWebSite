@@ -1,76 +1,605 @@
-body{
-    margin: 0;
-    background-image: url('../assets/images/fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Nunito:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
 }
 
-.navbar {
-    margin-bottom: 0;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-    height: 20px;
-    border-radius: 5px;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-right: 20px;
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #003366 !important;
-    background-color: #ffffff1a !important;
-    height: 25px;
-}
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
+/*Versão MOBILE*/
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 999999;
 }
 
-.container{
-    text-align: justify;
-    width: 90%;
+.navbar{
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    padding: 20px;
+    background: linear-gradient(to right, #a6aaa5, #9a9a9a, #847d81, #636066);
+    background-size: 400% 400%;
+    box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.72);
+    animation: backgroundTransition 8s ease-in-out infinite;
+}
+
+/* ul{
+    border: 2px solid black;
+} */
+
+li{
+    /* border: 1px solid red; */
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+.navbar a{
+    /* border: 1px solid blue; */
+    text-decoration: none;
+    color: #000;
+    /* font-weight: bold; */
+}
+
+.navbar p{
+    font-size: 22px;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.hamburguer{
+    font-size: 18px;
+}
+
+.menu{
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    background-color:#d3d3d3;
+    top: 84px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.menu li{
+    padding: 8px 15px;
+}
+
+.menu li:active{
+    background-color: #a1a8ba;
+}
+
+input[type=checkbox]:checked ~ .menu{
+    height: 170px;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
+.apresentation{
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    background-color: #fff;
-    opacity: 0.9;
+    text-align: center;
+    background-image: url("/img/backDesk.jpg");
+    filter: grayscale(0.5);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px 0px;
+}
+
+.apresentation img{
+    width: 80px;
+    margin: auto;
+}
+
+.apresentation h1,
+.apresentation h3 {
+    color: #fff;
+}
+
+.apresentation h1{
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.apresentation h3{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+section{
     padding: 20px;
 }
 
-.container h4{
-    margin: 5%;
-    width: 90%;
-}
-
-.container li{
-    padding-top: 10px;
-}
-
-.container p{
-    padding-top: 15px;
-}
-
-.thrid{
-    text-align: left;
-    width: 100%;
-    margin-bottom: 20%;
-}
-
-footer{
-    margin: 0;
-    padding: 5px;
-    background-color: #fff;
+section h1{
+    margin-top: 20px;
     text-align: center;
-    opacity: 0.9;
+    font-size: 26px;
+}
+
+.linha{
+    width: 150px;
+    margin: auto;
+    border-bottom: 4px solid #455866;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.service .linha {
+    width: 250px;
+}
+
+.questoes .linha,
+.programa .linha{
+    width: 210px;
+}
+
+.tabuada .linha,
+.editorImagem .linha,
+.teamSoccer .linha,
+.oferecer .linha{
+    width: 260px;
+}
+
+.api .linha,
+.cronometro .linha{
+    width: 200px;
+}
+
+.crud .linha,
+.codes .linha{
+    width: 170px;
+}
+
+.parteTime .linha,
+.contato .linha {
+    width: 330px;
+}
+
+.contatoEstagio .linha{
+    width: 280px;
+}
+
+section p{
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.questoes p,
+.tabuada p{
+    margin-bottom: 5px;
+}
+
+section a{
+    text-decoration: none;
+}
+
+.questoes a,
+.tabuada a {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+section > div{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    margin-bottom: 50px;
+    /* border: 2px solid brown; */
+}
+
+section > div > div{
+    /* border: 2px solid rgb(0, 199, 10); */
+    text-align: center;
+    padding: 10px;
+}
+
+.aboutUs > div > div img,
+.service > div > div img{
+    width: 50px;
+    margin: 10px;
+}
+
+.questoes > div img,
+.tabuada > div img,
+.cronometro > div img,
+.editorImagem > div img,
+.codes > div img,
+.teamSoccer > div > img,
+.oferecer > div > img,
+.parteTime > div > img{
+    width: 300px;
+    margin: 8px;
+}
+
+.programa > div > div img,
+.api > div > div img,
+.crud > div > div img,
+.filmaria > div > div img{
+    width: 250px;
+    margin: 8px;
+}
+
+.aboutUs > div > div h2{
+    font-size: 22px;
+    margin: 10px;
+}
+
+.aboutUs > div > div p{
+    margin-bottom: 10px;
+}
+
+.parteTime span{
+    font-size: 22px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: flex-start;
+    font-weight: bolder;
+    /* border: 1px solid pink; */
+}
+
+.contato > div > div,
+.contatoEstagio > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contato img,
+.contatoEstagio img{
+    /* border: 1px solid yellow; */
+    width: 50px;
+}
+
+.contato p,
+.contatoEstagio p{
+    font-size: 19px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.contatoEstagio > div span{
+    /* border: 1px solid red; */
+    padding: 20px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.menosExpressivos h1 {
+    padding-bottom: 20px;
+    font-size: 36px;
+}
+
+section:nth-child(odd){
+    background-color: #eeeeee;
+}
+
+section:nth-child(odd) > div{
+    background-color: #fff;
+}
+
+section:first-of-type{
+    background-color: transparent;
+}
+
+.link{
+    text-align: center;
+}
+footer {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 11px -2px rgba(0,0,0,0.72);
+}
+
+footer h4{
+    color: #3f3f3f;
+}
+
+/*Versão DESKTOP*/
+
+@media screen and (min-width: 1000px){
+    ul{
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        border: hidden;
+    }
+
+    .navbar{
+        /* border: 1px solid rebeccapurple; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .navbar h1{
+        font-size: 34px;
+        font-weight: 700;
+        transition: all 0.5s;
+    }
+
+    .navbar h1:hover{
+        letter-spacing: 2px;
+    }
+
+    .navbar ul{
+        margin-bottom: 10px;
+    }
+
+    .navbar li a{
+        font-size: 24px;
+    }
+
+    .menu{
+        overflow: visible;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        top: 23px;
+        right: 40px;
+    }
+
+    .menu li{
+        padding: 25px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+    .menu li:hover{
+        background-color: #a1a8ba;
+        border-radius: 10px;
+    }
+
+    .hamburguer{
+        visibility: hidden;
+    }
+
+    .apresentation{
+        background-size: 100%;
+        padding: 100px 0px;
+    }
+    
+    .apresentation img{
+        width: 150px;
+        margin: auto;
+    }
+    
+    .apresentation h1{
+        font-size: 60px;
+        font-weight: 900;
+        margin: 10px;
+        transition: all 0.5s;
+    }
+    
+    .apresentation h1:hover{
+        letter-spacing: 8px;
+    }
+    
+    .apresentation h3 {
+        font-size: 30px;
+    }
+
+    section{
+        padding: 20px 180px;
+    }
+    
+    section h1{
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .linha{
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    
+    .service .linha {
+        width: 350px;
+    }
+
+    .questoes .linha,
+    .programa .linha{
+        width: 300px;
+    }
+
+    .tabuada .linha,
+    .editorImagem .linha,
+    .teamSoccer .linha,
+    .oferecer .linha {
+        width: 400px;
+    }
+
+    .api .linha,
+    .cronometro .linha{
+        width: 300px;
+    }
+
+    .crud .linha,
+    .codes .linha{
+        width: 250px;
+    }
+
+    .parteTime .linha,
+    .contato .linha{
+        width: 530px;
+    }
+
+    .contatoEstagio .linha{
+        width: 450px;
+    }
+        
+    section p{
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    section > div p{
+        text-align: justify;
+    }
+
+    .service p,
+    .programa p,
+    .crud p{
+        text-align: justify;
+    }
+    
+    section > div{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        /* border: 2px solid brown; */
+    }
+    
+    section > div > div{
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .aboutUs > div > div{
+        width: 33.3%;
+    }
+
+    .service > div > div{
+        width: 50%;
+    }
+    
+    .aboutUs > div > div img,
+    .service > div > div img {
+        width: 80px;
+    }
+    
+    .aboutUs > div > div h2,
+    .service > div > div h2 {
+        font-size: 22px;
+        margin: 10px;
+    }
+    
+    .aboutUs > div > div p,
+    .service > div > div p{
+        font-size: 20px;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    .questoes > div img,
+    .tabuada > div img,
+    .cronometro > div img,
+    .editorImagem > div img,
+    .codes > div img,
+    .teamSoccer > div img,
+    .oferecer > div img,
+    .parteTime > div img{
+        width: 600px;
+        margin: 8px;
+    }
+
+    .programa > div > div img,
+    .api > div > div img,
+    .crud > div > div img,
+    .filmaria > div > div img{
+        width: 400px;
+        margin: 8px;
+    }
+
+    .tabuada > div{
+        flex-direction: row-reverse;
+    }
+
+    .programa > div,
+    .api > div,
+    .crud > div,
+    .contatoEstagio > div {
+        flex-direction: column;
+    }
+
+    .programa > div > div:nth-child(odd),
+    .api > div > div:nth-child(odd),
+    .crud > div > div:nth-child(odd) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .programa > div > div:nth-child(even),
+    .api > div > div:nth-child(even),
+    .crud > div > div:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .programa > div > div p,
+    .api > div > div p,
+    .crud > div > div p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contato > div{
+        flex-direction: column;
+        align-items: left;
+        padding: 0px 100px;
+    }
+
+    .contato > div > div{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .contato img{
+        width: 60px;
+    }
+
+    .contatoEstagio > div span{
+        font-size: 24px;
+        text-align: left;
+        margin-left: 12px;
+    }
+
+    .menosExpressivos h1 {
+        font-size: 42px;
+    }
+    
+    footer {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+ 
 }
