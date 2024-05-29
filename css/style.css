@@ -219,6 +219,9 @@ section > div > div{
 .questoes > div img,
 .tabuada > div img,
 .cronometro > div img,
+.pokemon > div img,
+.sosriograndedosul > div img,
+.montatime > div img,
 .editorImagem > div img,
 .codes > div img,
 .teamSoccer > div > img,
@@ -311,7 +314,6 @@ footer {
 footer h4{
     color: #3f3f3f;
 }
-
 
 @media screen and (min-width: 1000px){
     ul{
@@ -506,6 +508,9 @@ footer h4{
     .questoes > div img,
     .tabuada > div img,
     .cronometro > div img,
+    .pokemon > div img,
+    .sosriograndedosul > div img,
+    .montatime > div img,
     .editorImagem > div img,
     .codes > div img,
     .teamSoccer > div img,
