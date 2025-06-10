@@ -1,27 +1,18 @@
 import './App.css'
-import AboutSection from './components/AboutSection/AboutSection'
-import AuthoritySection from './components/AuthoritySection/AuthoritySection'
-import FeaturedProjectsSection from './components/FeaturedProjectsSection/FeaturedProjectsSection'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import HeroSection from './components/HeroSection/HeroSection'
-import ServicesSection from './components/ServicesSection/ServicesSection'
-import WhatsAppWidget from './components/WhatsAppWidget/WhatsAppWidget'
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/home/home'
+import ProjectsPage from './pages/projectsPage/projectsPage';
 
 function App() {
   
   return (
-    <>
-      <Header />
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <AuthoritySection />
-      <FeaturedProjectsSection />
-      <Footer />
-      <WhatsAppWidget />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projetos" element={<ProjectsPage />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 

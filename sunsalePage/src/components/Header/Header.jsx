@@ -33,7 +33,7 @@ const Header = () => {
 
     return (
         <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
-            <a href="#inicio" onClick={() => setIsMenuOpen(false)} className={styles.logoLink}>
+            <a href="/" onClick={() => setIsMenuOpen(false)} className={styles.logoLink}>
                 <div className={styles.logoContainer}>
                     <img src={logo} alt="SunSale Logo" className={styles.logo} />
                     <span className={styles.brand}>SunSale System</span>
