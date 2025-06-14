@@ -41,11 +41,11 @@ const Header = () => {
             </a>
 
             <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
-                <a href="#inicio" onClick={() => setIsMenuOpen(false)} className={activeSection === 'inicio' ? styles.active : ''}>Início</a>
-                <a href="#quem-somos" onClick={() => setIsMenuOpen(false)} className={activeSection === 'quem-somos' ? styles.active : ''}>Quem Somos</a>
-                <a href="#servicos" onClick={() => setIsMenuOpen(false)} className={activeSection === 'servicos' ? styles.active : ''}>Serviços</a>
-                <a href="#autoridade" onClick={() => setIsMenuOpen(false)} className={activeSection === 'autoridade' ? styles.active : ''}>Autoridade</a>
-                <a href="#projetos" onClick={() => setIsMenuOpen(false)} className={activeSection === 'projetos' ? styles.active : ''}>Projetos</a>
+                <a href="/#inicio" onClick={() => setIsMenuOpen(false)} className={activeSection === 'inicio' ? styles.active : ''}>Início</a>
+                <a href="/#quem-somos" onClick={() => setIsMenuOpen(false)} className={activeSection === 'quem-somos' ? styles.active : ''}>Quem Somos</a>
+                <a href="/#servicos" onClick={() => setIsMenuOpen(false)} className={activeSection === 'servicos' ? styles.active : ''}>Serviços</a>
+                <a href="/#autoridade" onClick={() => setIsMenuOpen(false)} className={activeSection === 'autoridade' ? styles.active : ''}>Autoridade</a>
+                <a href="/#projetos" onClick={() => setIsMenuOpen(false)} className={activeSection === 'projetos' ? styles.active : ''}>Projetos</a>
             </nav>
 
             <div className={styles.hamburger} onClick={toggleMenu}>

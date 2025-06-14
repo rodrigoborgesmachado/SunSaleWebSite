@@ -1,64 +1,64 @@
 import { useState, useEffect } from 'react';
 import projectsApi from '../../services/apiServices/projectsApi';
+import styles from './Projects.module.css';
 
-const Projects = () => {
+const CardsProjects = () => {
     const [items, setItems] = useState([]);
-    const [page, setPage] = useState(1);
-    const quantity = 6; 
+    const [page, _setPage] = useState(1);
+    const [loading, setLoading] = useState(true);
+    const quantity = 6;
 
     useEffect(() => {
         const fetchItems = async () => {
             try {
+                setLoading(true);
                 const response = await projectsApi.getPaginated(page, quantity);
-                setItems(response.object);
-            } catch (error) {
-                toast.error('Erro ao buscar os itens.');
-            } 
+                setItems(response.object || []);
+            } catch {
+                console.error('Erro ao buscar os itens.');
+            } finally {
+                setLoading(false);
+            }
         };
         fetchItems();
     }, [page, quantity]);
 
-    const handlePageChange = (newPage) => {
-        if (newPage > 0 && newPage <= totalPages) {
-            setPage(newPage);
-        }
-    };
-
-    if(!items)
-        return (<p>Carregando</p>)
-
     return (
-    <div className="">
-        <div className=''>
-            <ul className='project-list'>
-                {items.map((item) => (
-                    <li key={item.id} className='project-card'>
-                        <div className='project-header'>
-                            <img src={item.capa} alt={item.titulo} className='project-image' />
-                            <div>
-                                <h2 className='project-title'>{item.titulo}</h2>
-                                <a href={item.link} target='_blank' rel='noopener noreferrer' className='project-link'>
-                                    Acessar Projeto
-                                </a>
-                            </div>
-                        </div>
-                        <p className='project-intro'>{item.intro}</p>
-                        <div
-                            className='project-description'
-                            dangerouslySetInnerHTML={{ __html: item.descricao }}
-                        />
-                        <div className='project-footer'>
-                            <span>Curtidas: {item.curtidas}</span>
-                            <span>Criado em: {new Date(item.created).toLocaleDateString()}</span>
-                            <span>Atualizado em: {new Date(item.updated).toLocaleDateString()}</span>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </div>
+        <section className={styles['projects-page-section']}>
+            <h1 className={styles['projects-page-title']}>Nossos Projetos</h1>
+
+            {loading ? (
+                <div className={styles['projects-loading']}>Carregando projetos...</div>
+            ) : items.length === 0 ? (
+                <div className={styles['projects-empty']}>
+                    Nenhum projeto disponível no momento. Volte em breve!
+                </div>
+            ) : (
+                <ul className={styles['projects-grid']}>
+                    {items.map((item) => (
+                        <li key={item.id} className={styles['projects-card']}>
+                            <img src={item.capa} alt={item.titulo} className={styles['projects-image']} />
+                            <h2 className={styles['projects-title']}>{item.titulo}</h2>
+                            <p className={styles['projects-intro']}>{item.intro}</p>
+                            <h3 className={styles['projects-detail-title']}>Mais detalhes</h3>
+                            <div
+                                className={styles['projects-description']}
+                                dangerouslySetInnerHTML={{ __html: item.descricao }}
+                            />
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles['projects-button']}
+                            >
+                                Ver solução →
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </section>
     );
 };
 
-export default Projects;
-
+export default CardsProjects;
