@@ -80,15 +80,22 @@
   height: 18px;
 }
 
+.footer-share {
+  background-color: var(--color-section-dark-bg);
+  border-radius: 16px;
+  padding: 1rem;
+}
 /* Coluna de compartilhamento */
 .footer-share h4 {
   font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: white;
+  color: var(--color-text-bold);
   margin-bottom: 0.5rem;
 }
+
+
 
 .footer-share p {
   font-size: 0.9rem;

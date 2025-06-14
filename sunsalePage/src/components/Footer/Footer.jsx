@@ -56,7 +56,7 @@ const Footer = () => {
             Veja os artigos e contribuições da SunSale para a comunidade Dev.
           </p>
           <a
-            href="https://example.com/artigos"
+            href="https://www.rodrigomachado.net/postagens"
             className={styles['footer-button']}
             target="_blank"
             rel="noopener noreferrer"
@@ -70,12 +70,12 @@ const Footer = () => {
       {/* Linha e base */}
       <div className={styles['footer-bottom']}>
         <ul className={styles['footer-nav']}>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#quem-somos">Quem Somos</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#autoridade">Autoridade</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="/#inicio">Início</a></li>
+          <li><a href="/#quem-somos">Quem Somos</a></li>
+          <li><a href="/#servicos">Serviços</a></li>
+          <li><a href="/#autoridade">Autoridade</a></li>
+          <li><a href="/#projetos">Projetos</a></li>
+          <li><a href="/#contato">Contato</a></li>
         </ul>
 
         <p>SunSale System © 2025 — Todos os direitos reservados.</p>
