@@ -1,0 +1,66 @@
+.home-projects-section {
+  background-color: #f6fcff;
+  padding: 5rem 1.5rem;
+  text-align: left;
+}
+
+.home-projects-container {
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+
+}
+
+.home-projects-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-text-bold);
+  margin-bottom: 1.2rem;
+}
+
+.highlightBlue {
+  color: var(--color-primary-light); /* #477BE2 */
+}
+
+.highlightDarkBlue {
+  color: var(--color-primary-dark); /* #023E7D */
+}
+
+.home-projects-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-regular);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.home-projects-button {
+  display: inline-block;
+  background-color: var(--color-primary-dark);
+  color: white;
+  padding: 0.85rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(2, 62, 125, 0.2);
+  transition: all 0.3s ease;
+}
+
+.home-projects-button:hover {
+  background-color: var(--color-primary-light);
+  box-shadow: 0 4px 12px rgba(2, 62, 125, 0.3);
+  transform: translateY(-2px);
+}
+
+/* animação inicial (invisível) */
+.home-projects-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* visível com transição */
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}

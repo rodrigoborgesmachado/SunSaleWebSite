@@ -1,0 +1,127 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: var(--color-section-light-bg);
+    position: sticky;
+    /* fixa no topo */
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.logoLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* sombra ao rolar */
+    background-color: var(--color-section-light-bg);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.logoContainer>img {
+    width: auto;
+}
+
+.logo {
+    height: 28px;
+    width: auto;
+}
+
+.brand {
+    font-weight: bold;
+    color: var(--color-primary-light);
+    font-size: 1.2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    margin-right: 10rem;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-text-bold);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-primary-light);
+    transition: width 0.2s ease-in-out;
+}
+
+.nav a:hover {
+    color: var(--color-primary-light);
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav a.active {
+    color: var(--color-primary-light);
+    border-bottom: 2px solid var(--color-primary-light);
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary-dark);
+    border-radius: 2px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-right: 0;
+        background-color: var(--color-section-light-bg);
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.5rem 2rem;
+        width: 200px;
+        display: none;
+        box-shadow: 0px 4px 6px rgba(0, 5, 2, 0.1);
+    }
+
+    .navOpen {
+        display: flex;
+    }
+
+}

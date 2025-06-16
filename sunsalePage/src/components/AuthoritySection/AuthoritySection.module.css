@@ -1,0 +1,90 @@
+.authority-section {
+  background-color: var(--color-section-dark-bg);
+  background-image: url('/img/AuthoritySection-img.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1.5rem;
+}
+
+.authority-container {
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 3rem;
+}
+
+/* Cards grid 100% */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 calc(25% - 1.125rem); /* 4 cards por linha com gap */
+  min-width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border: 1px solid transparent;
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  animation: fadeSlideIn 0.8s ease-out forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+/* REMOVE HOVER */
+.card:hover {
+  transform: none;
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--color-text-regular);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem;
+}
+
+/* Animação */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}

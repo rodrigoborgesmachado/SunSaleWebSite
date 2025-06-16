@@ -1,0 +1,133 @@
+.projects-page-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-section-light-bg);
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+}
+
+.projects-page-title {
+  font-size: 2rem;
+  text-align: left;
+  color: var(--color-primary-dark);
+  margin-bottom: 3rem;
+}
+
+.projects-loading,
+.projects-empty {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-text-regular);
+  padding: 2rem 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ← 3 colunas fixas */
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-section-dark-bg);
+  border-radius: 12px;
+  padding: 1.2rem;
+  height: 650px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e7eb; 
+}
+
+.projects-card:hover {
+  transform: translateY(-3px);
+}
+
+.projects-image {
+  width: 100%;
+  height: 180px; /* antes era 140px */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+
+.projects-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-bold);
+  margin-bottom: 0.4rem;
+}
+
+.projects-intro {
+  font-size: 0.85rem;
+  color: var(--color-text-regular);
+  margin-bottom: 0.5rem;
+  flex-grow: 0;
+}
+
+.projects-detail-title {
+  font-size: 0.95rem;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+
+.projects-description {
+  flex-grow: 1;
+  overflow-y: auto;
+  font-size: 0.85rem;
+  color: var(--color-text-regular);
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+  max-height: 200px;
+  background-color: #477be215;
+  padding: 10px 0 ;
+  border-radius: 12px;
+}
+
+/* Scroll discreto */
+.projects-description::-webkit-scrollbar {
+  width: 4px;
+}
+.projects-description::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Botão fixado na parte inferior */
+.projects-button {
+  display: block;
+  margin-top: auto;
+  background-color: var(--color-primary-light);
+  color: white;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.projects-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* mobile */
+  }
+}

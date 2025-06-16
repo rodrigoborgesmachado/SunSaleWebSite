@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --color-primary-dark: #023E7D;
+  /* botões, projetos e títulos */
+
+  --color-primary-light: #477BE2;
+  /* ícones, nome da marca, projetos */
+
+  --color-image-filter: #E5E7EB;
+  /* filtro imagem section home */
+
+  --color-section-dark-bg: #F5F7FA;
+  /* fundo das sections escuras */
+
+  --color-section-light-bg: #FFFFFF;
+  /* fundo das sections claras */
+
+  --color-text-bold: #2E2E2E;
+  /* palavras em negrito */
+
+  --color-text-regular: #4c5056;
+  /* texto corrido */
+
+  --header-height: 80px;
+  --section-max-width: 1200px;
+}
