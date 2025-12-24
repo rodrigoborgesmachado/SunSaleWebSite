@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './AboutSection.module.css';
-import teamImage from '/img/AboutSection_team_img.png';
+import rodrigoImage from '/img/rodrigo-1.jpeg';
 
 const cardsInfo = [
     {
@@ -46,7 +46,11 @@ const AboutSection = () => {
                     </div>
 
                     <div className={styles['about-image']}>
-                        <img src={teamImage} alt="Equipe de desenvolvedores" />
+                        <img
+                            src={rodrigoImage}
+                            alt="Rodrigo"
+                            className={styles['about-avatar']}
+                        />
                     </div>
                 </div>
             </div>

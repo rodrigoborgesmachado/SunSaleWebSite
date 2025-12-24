@@ -1,19 +1,25 @@
 import { useState, useEffect } from 'react';
-import projectsApi from '../../services/apiServices/projectsApi';
 import styles from './Projects.module.css';
 
 const CardsProjects = () => {
     const [items, setItems] = useState([]);
-    const [page, _setPage] = useState(1);
     const [loading, setLoading] = useState(true);
+    const [page, setPage] = useState(1);
+    const [total, setTotal] = useState(0);
     const quantity = 6;
 
     useEffect(() => {
         const fetchItems = async () => {
             try {
                 setLoading(true);
-                const response = await projectsApi.getPaginated(page, quantity);
-                setItems(response.object || []);
+                const apiUrl = `https://apisunsale.azurewebsites.net/api/Postagem/pagged?page=${page}&quantity=${quantity}&tipoPostagem=Featured_Projects`;
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error(`Request failed: ${response.status}`);
+                }
+                const data = await response.json();
+                setItems(data.object || []);
+                setTotal(Number(data.total) || 0);
             } catch {
                 console.error('Erro ao buscar os itens.');
             } finally {
@@ -22,6 +28,8 @@ const CardsProjects = () => {
         };
         fetchItems();
     }, [page, quantity]);
+
+    const totalPages = Math.max(1, Math.ceil(total / quantity));
 
     return (
         <section className={styles['projects-page-section']}>
@@ -56,6 +64,29 @@ const CardsProjects = () => {
                         </li>
                     ))}
                 </ul>
+            )}
+            {!loading && items.length > 0 && totalPages > 1 && (
+                <nav className={styles['projects-pagination']} aria-label="Paginação de projetos">
+                    <button
+                        type="button"
+                        className={styles['pagination-button']}
+                        onClick={() => setPage((prev) => Math.max(1, prev - 1))}
+                        disabled={page === 1}
+                    >
+                        Anterior
+                    </button>
+                    <span className={styles['pagination-info']}>
+                        Página {page} de {totalPages}
+                    </span>
+                    <button
+                        type="button"
+                        className={styles['pagination-button']}
+                        onClick={() => setPage((prev) => Math.min(totalPages, prev + 1))}
+                        disabled={page === totalPages}
+                    >
+                        Próxima
+                    </button>
+                </nav>
             )}
         </section>
     );

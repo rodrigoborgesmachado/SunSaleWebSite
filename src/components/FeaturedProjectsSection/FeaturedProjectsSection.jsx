@@ -6,21 +6,21 @@ const projects = [
     nome: 'Questões Aqui',
     descricao:
       'Plataforma de exercícios para estudantes e professores, com recursos interativos e relatórios.',
-    imagem: '/img/FeaturedProjectsSection_QuestoesAqui.png',
+    imagem: '/img/questoesAqui.png',
     link: 'https://www.questoesaqui.com/'
   },
   {
     nome: 'Tabuada Divertida',
     descricao:
       'Aplicativo educativo que torna o aprendizado da matemática mais lúdico e envolvente.',
-    imagem: '/img/FeaturedProjectsSection_TabuadaDivertida.png',
+    imagem: '/img/tabuadaDivertida.png',
     link: 'https://www.tabuadadivertida.com/'
   },
   {
     nome: 'CrudForms',
     descricao:
       'Sistema para gestão de cadastros e processos internos, prático e personalizável.',
-    imagem: '/img/FeaturedProjectsSection_CrudForms.png',
+    imagem: '/img/crudForms.png',
     link: 'https://www.crudforms.com/'
   }
 ];
