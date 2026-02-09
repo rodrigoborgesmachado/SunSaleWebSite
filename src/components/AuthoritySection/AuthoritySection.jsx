@@ -19,8 +19,8 @@ const authorityData = [
     },
     {
         icone: '/img/AuthoritySection_4_planeta.svg',
-        valor: 'Brasil',
-        texto: 'Atuação nacional'
+        valor: 'Mundo',
+        texto: 'Atuação nacional e internacional'
     }
 ];
 
