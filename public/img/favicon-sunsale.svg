@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 617 617" role="img" aria-label="SunSale System - símbolo do sol">
+  <g fill="none" stroke="#073B78" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="310" cy="237" r="55" stroke-width="24"/>
+    <g stroke-width="23">
+      <path d="M114 231 H211"/>
+      <path d="M409 231 H505"/>
+      <path d="M310 326 V437"/>
+      <path d="M241 293 L174 360"/>
+      <path d="M379 293 L445 360"/>
+      <path d="M184 280 L130 303"/>
+      <path d="M436 280 L489 303"/>
+      <path d="M255 349 L231 401"/>
+      <path d="M365 349 L388 401"/>
+    </g>
+  </g>
+</svg>
